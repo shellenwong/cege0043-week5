@@ -1,0 +1,9 @@
+[submodule "uczlx69/www/js"]
+	path = uczlx69/www/js
+	url = https://github.com/shellenwong/cege0043-jsReference
+[submodule "uczlx69/www/css"]
+	path = uczlx69/www/css
+	url = https://github.com/shellenwong/cege0043-cssReference
+[submodule "uczlx69/www/images"]
+	path = uczlx69/www/images
+	url = https://github.com/shellenwong/cege0043-imagesReference
