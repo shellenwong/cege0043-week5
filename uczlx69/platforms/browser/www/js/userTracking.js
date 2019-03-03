@@ -29,7 +29,7 @@ function getDistance(){
 
 //to get the distance from earthquake to the current position
 function getDistanceFromMultiplePoints(position){
-	var minDistance=100000000000;
+	var minDistance=10000000000000000;
 	var closestQuake='';
 	for(var i=0;i<earthquakes.features.length;i++){
 		var obj=earthquakes.feature[i];
