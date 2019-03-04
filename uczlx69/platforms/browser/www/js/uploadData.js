@@ -37,11 +37,14 @@ var client;
 
 function processData(postString){
 	client=new XMLHttpRequest();
-	client.open('POST','https://developer.cege.ucl.ac.uk:30281/reflectData',true);
-	client.setRequestHeader('Content-Type','application/x-www-form-urlencoded');
-	client.onreadystatechange=dataUpload;
-    client.send(postString);
+	postString=postString+'&port_id='+httpPortNumber;
+	var url='http://developer.cege.ucl.ac.uk:'+httpPortNumber+'/uploadData';
+	client.open('POST',url,true);
+	client.setRequestHeader('Content-type','application/x-www-form-urlencoded');
+	client.onreadystatechange=dataUploaded;
+	client.send(postString);
 }
+
 
 //create the code to wait for the response from the data server, and process the response once it is received
 function dataUpload(){
