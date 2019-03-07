@@ -2,7 +2,7 @@ var httpPortNumber;
 var httpsPortNumber;
 
 function getPort(){
-	alert('you are getting port');
+	//alert('you are getting port');
 	var xhr=new XMLHttpRequest();
 	xhr.addEventListener('load',function(){
 		var parser=new DOMParser();

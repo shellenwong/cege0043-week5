@@ -30,18 +30,18 @@ function showposition(position){
 	   markerColor:'red'});
 	   
 	   
-	   
+function loadW3HTML(){
+	w3.includeHTML();
+}	   
 	   
 	   
 function startup(){
 	document.addEventListener('DOMContentLoaded',function(){
-		trackAndCircle();getPort();
+		trackAndCircle();getPort();loadW3HTML();getFormdata();
 	},false);
 }	   
 
-function loadW3HTML(){
-	w3.includeHTML();
-}
+
 
 
 
