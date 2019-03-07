@@ -7,7 +7,7 @@ var formdatalayer;
 
 //run the function when you click the LOAD DATA BUTTON
 function loadFormdata(){
-	alert(loading FORM DATA);
+	alert('loading FORM DATA');
 	getFormdata();
 }
 
